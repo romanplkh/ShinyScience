@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shiny Science</title>
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="tablet.css" />
+    <link rel="stylesheet" href="desk_final.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+</html>
+
+<body>
+  <header>
+    <!-- <div class="brand"></div> -->
+    <img src="./image/logo.png" alt="">
+    <h2><a href="final.html">Shiny Science</a></h2>
+    <nav>
+      <ul class="desktop-navigation">
+        <li class="nav-item"><a href="#">Episodes</a></li>
+        <li class="nav-item"><a href="#">Craft</a></li>
+        <li class="nav-item"> <a href="#">Arts</a></li>
+        <li class="nav-item"> <a href="#">Topics</a></li>
+        <li class="nav-item"><a href="#">FAQ</a></li>
+        <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-group">
+      <input id="search" type="search"><i class="fas fa-search"></i>
+    </div>
+
+    <span class="open-slide">
+      <a onclick="openSlideMenu()" href="#">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+        </svg>
+      </a>
+    </span>
+    <div id="side-menu" class="side-nav">
+      <a onclick="closeSlideMenu()" href="#" class="btn-close">&times;</a>
+      <div class="search-drop-group">
+        <i class="fas fa-search"></i> <input id="search" type="search">
+      </div>
+      <a href="#">Episodes</a>
+      <a href="#">Craft</a>
+      <a href="#">Arts</a>
+      <a href="#">Topics</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+  </header>
+
+  <main class="main-form">
+    <form>
+      <h1>Contact Us</h1>
+      <label for="#name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <textarea name="message" id="message"></textarea>
+      <input type="submit" class="btn-submit" value="Send">
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container-footer">
+      <div class="main-footer-title">
+        <div class="main-footer__logo">
+        </div>
+        <p>Shiny Science</p>
+      </div>
+      <h3>Follow us on Social Network</h3>
+      <div class="main-footer__social">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.snapchat.com"> <i class="fab fa-snapchat-square"></i></a>
+      </div>
+  
+      <!-- FOOTER NAVIGATION -->
+      <nav>
+        <ul class="main-footer__nav">
+          <li class="main-footer__nav-item"><a href="#">About</a></li>
+          <li class="main-footer__nav-item"><a href="#">Contact Us</a></li>
+          <li class="main-footer__nav-item"><a href="#">Subscribe</a></li>
+          <br class="separator">
+          <li class="main-footer__nav-item link-foot"><a href="#">Policy</a></li>
+          <li class="main-footer__nav-item"><a href="#">Terms</a></li>
+        </ul>
+      </nav>
+      <div class="refer">
+        <p class="main-footer__info">
+          2019 &copy; Shiny Science. All rights reserved
+        </p>
+        <p class="main-footer__info-web">
+          Powered by RP Tech Solutions
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function openSlideMenu() {
+      if (window.innerWidth >= 650) {
+        document.querySelector('#side-menu').style.width = '400px';
+      } else {
+        document.querySelector('#side-menu').style.width = '250px';
+      }
+
+      document.querySelector('svg').style.visibility = 'hidden';
+    }
+
+    function closeSlideMenu() {
+      document.querySelector('#side-menu').style.width = '0px';
+      document.querySelector('svg').style.visibility = 'visible';
+
+    }
+  </script>
+  </body>
+  
+  </html>
