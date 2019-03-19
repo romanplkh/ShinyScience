@@ -1,199 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Shiny Science</title>
-  <link rel="stylesheet" href="shared.css">
-  <link rel="stylesheet" href="mobile.css">
-  <link rel="stylesheet" href="tablet.css">
-  <link rel="stylesheet" href="desk_final.css" />
-  <link rel="stylesheet" href="universe.css">
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shiny Science</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="desk_final.css" />
+    <link rel="stylesheet" href="universe.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  </head>
 
-<body>
-  <header>
-    <!-- <div class="brand"></div> -->
-    <img src="./image/logo.png" alt="">
-    <h2>Shiny Science</h2>
-    <nav>
-      <ul class="desktop-navigation">
-        <li class="nav-item"><a href="#">Episodes</a></li>
-        <li class="nav-item"><a href="#">Craft</a></li>
-        <li class="nav-item"> <a href="#">Arts</a></li>
-        <li class="nav-item"> <a href="#">Topics</a></li>
-        <li class="nav-item"><a href="#">FAQ</a></li>
-        <li class="nav-item"><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-
-    <div class="search-group">
-      <input id="search" type="search"><i class="fas fa-search"></i>
-    </div>
-
-    <span class="open-slide">
-      <a onclick="openSlideMenu()" href="#">
-        <svg width="30" height="30">
-          <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
-          <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
-          <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
-        </svg>
-      </a>
-    </span>
-    <div id="side-menu" class="side-nav">
-      <a onclick="closeSlideMenu()" href="#" class="btn-close">&times;</a>
-      <div class="search-drop-group">
-        <i class="fas fa-search"></i> <input id="search" type="search">
-      </div>
-      <a href="#">Episodes</a>
-      <a href="#">Craft</a>
-      <a href="#">Arts</a>
-      <a href="#">Topics</a>
-      <a href="#">FAQ</a>
-      <a href="#">Contact Us</a>
-    </div>
-
-  </header>
-
-
-  <div class="container-flex">
-
-    <section class="welcome-headline">
-      <div class="overlay">
-      </div>
-      <h1>How the universe was created <br> “The Big Bang”</h1>
-    </section>
-
-    <section class="section-title-star">
-      <p>Stars</p>
-    </section>
-    <div class="section-body-star">
-      <div>
-        <h3>Our Closest Star – the Sun.</h3>
-        <ul>
-          <li>The center of our solar system.</li>
-          <li>Our solar system is our sun and everything that travels around it.</li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>How Stars are Born</h2>
-        <h3>The lifecycle of a star</h3>
-      </div>
-
-      <div>
-        <h4>Do stars live forever?</h4>
-        <ul>
-          <li>Red giants</li>
-          <li>White dwarves</li>
-          <li>Super novas</li>
-          <li>Hyper novas </li>
-          <li>gamma ray bursts</li>
-          <li>Black holes</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>
-          How long will our sun live?
-        </h3>
-        <ul>
-          <li>For at least another 7 BILLION years, to us that is almost forever!</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>What is the SOLAR WIND?</h3>
-        <ul>
-          <li>The flow of particles/plasma from the sun</li>
-        </ul>
-        <h3>What protects us from the solar wind?</h3>
-        <ul>
-          <li>Our magnetic field, it diverts the solar wind around us.</li>
-        </ul>
-      </div>
-
-      <!-- COPY -->
-      <div>
-        <h3>What is the SOLAR WIND?</h3>
-        <ul>
-          <li>The flow of particles/plasma from the sun</li>
-        </ul>
-        <h3>What protects us from the solar wind?</h3>
-        <ul>
-          <li>Our magnetic field, it diverts the solar wind around us.</li>
-        </ul>
-      </div>
-
-
-
-    </div>
-
-  </div>
-
-
-
-
-
-  <!-- FOOTER -->
-  <footer class="main-footer">
-    <div class="container-footer">
-      <div class="main-footer-title">
-        <div class="main-footer__logo">
-        </div>
-        <p>Shiny Science</p>
-      </div>
-      <h3>Follow us on Social Network</h3>
-      <div class="main-footer__social">
-        <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.snapchat.com"> <i class="fab fa-snapchat-square"></i></a>
-      </div>
-
-      <!-- FOOTER NAVIGATION -->
+  <body class="topic-bgc">
+    <header>
+      <!-- <div class="brand"></div> -->
+      <img src="./image/logo.png" alt="">
+      <h2>Shiny Science</h2>
       <nav>
-        <ul class="main-footer__nav">
-          <li class="main-footer__nav-item"><a href="#">About</a></li>
-          <li class="main-footer__nav-item"><a href="#">Contact Us</a></li>
-          <li class="main-footer__nav-item"><a href="#">Subscribe</a></li>
-          <br class="separator">
-          <li class="main-footer__nav-item link-foot"><a href="#">Policy</a></li>
-          <li class="main-footer__nav-item"><a href="#">Terms</a></li>
+        <ul class="desktop-navigation">
+          <li class="nav-item"><a href="#">Episodes</a></li>
+          <li class="nav-item"><a href="#">Craft</a></li>
+          <li class="nav-item"> <a href="#">Arts</a></li>
+          <li class="nav-item"> <a href="#">Topics</a></li>
+          <li class="nav-item"><a href="#">FAQ</a></li>
+          <li class="nav-item"><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
-      <div class="refer">
-        <p class="main-footer__info">
-          2019 &copy; Shiny Science. All rights reserved
-        </p>
-        <p class="main-footer__info-web">
-          Powered by RP Tech Solutions
-        </p>
+
+      <div class="search-group">
+        <input id="search" type="search"><i class="fas fa-search"></i>
       </div>
+
+      <span class="open-slide">
+        <a onclick="openSlideMenu()" href="#">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+      <div id="side-menu" class="side-nav">
+        <a onclick="closeSlideMenu()" href="#" class="btn-close">&times;</a>
+        <div class="search-drop-group">
+          <i class="fas fa-search"></i> <input id="search" type="search">
+        </div>
+        <a href="#">Episodes</a>
+        <a href="#">Craft</a>
+        <a href="#">Arts</a>
+        <a href="#">Topics</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+    </header>
+
+
+    <div class="container-flex">
+
+      <section class="welcome-headline">
+        <div class="overlay">
+        </div>
+        <h1>How the universe was created <br> “The Big Bang”</h1>
+      </section>
+      <section class="section-title-star">
+        <p>Space</p>
+      </section>
+
+      <section class="section-body topic">
+        <div>
+          <article>
+            <h1>Space</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et maiores iste minima molestias. Odio reiciendis minus
+            adipisci. Beatae cupiditate maiores suscipit ipsum at numquam sunt, aspernatur magnam eveniet illo. Voluptatibus ea
+            ipsum deserunt cumque magni! Blanditiis debitis deserunt cum numquam magnam in saepe illo voluptatum harum
+            consequatur. Earum quidem doloribus veniam exercitationem recusandae! Modi ullam ducimus dignissimos totam itaque iste
+            veniam officia id distinctio consequatur. Dolore officiis rem at animi.
+          </article>
+          <div class="star-image"></div>
+        </div>
+        
+        <div>
+          <article>
+            <h1>Space</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et maiores iste minima molestias. Odio reiciendis minus
+            adipisci. Beatae cupiditate maiores suscipit ipsum at numquam sunt, aspernatur magnam eveniet illo. Voluptatibus ea
+            ipsum deserunt cumque magni! Blanditiis debitis deserunt cum numquam magnam in saepe illo voluptatum harum
+            consequatur. Earum quidem doloribus veniam exercitationem recusandae! Modi ullam ducimus dignissimos totam itaque iste
+            veniam officia id distinctio consequatur. Dolore officiis rem at animi.
+          </article>
+          <div class="solar-image"></div>
+        </div>
+
+        <div>
+          <article>
+            <h1>Universe</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et maiores iste minima molestias. Odio reiciendis minus
+            adipisci. Beatae cupiditate maiores suscipit ipsum at numquam sunt, aspernatur magnam eveniet illo. Voluptatibus ea
+            ipsum deserunt cumque magni! Blanditiis debitis deserunt cum numquam magnam in saepe illo voluptatum harum
+            consequatur. Earum quidem doloribus veniam exercitationem recusandae! Modi ullam ducimus dignissimos totam itaque
+            iste
+            veniam officia id distinctio consequatur. Dolore officiis rem at animi.
+          </article>
+          <div class="universe-image"></div>
+        </div>
+        
+
+
+
+      </section>
+
     </div>
-  </footer>
-  <script>
-    function openSlideMenu() {
-      if (window.innerWidth >= 650) {
-        document.querySelector('#side-menu').style.width = '400px';
-      } else {
-        document.querySelector('#side-menu').style.width = '250px';
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <div class="container-footer">
+        <div class="main-footer-title">
+          <div class="main-footer__logo">
+          </div>
+          <p>Shiny Science</p>
+        </div>
+        <h3>Follow us on Social Network</h3>
+        <div class="main-footer__social">
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.snapchat.com"> <i class="fab fa-snapchat-square"></i></a>
+        </div>
+
+        <!-- FOOTER NAVIGATION -->
+        <nav>
+          <ul class="main-footer__nav">
+            <li class="main-footer__nav-item"><a href="#">About</a></li>
+            <li class="main-footer__nav-item"><a href="#">Contact Us</a></li>
+            <li class="main-footer__nav-item"><a href="#">Subscribe</a></li>
+            <br class="separator">
+            <li class="main-footer__nav-item link-foot"><a href="#">Policy</a></li>
+            <li class="main-footer__nav-item"><a href="#">Terms</a></li>
+          </ul>
+        </nav>
+        <div class="refer">
+          <p class="main-footer__info">
+            2019 &copy; Shiny Science. All rights reserved
+          </p>
+          <p class="main-footer__info-web">
+            Powered by RP Tech Solutions
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function openSlideMenu() {
+        if (window.innerWidth >= 650) {
+          document.querySelector('#side-menu').style.width = '400px';
+        } else {
+          document.querySelector('#side-menu').style.width = '250px';
+        }
+
+        document.querySelector('svg').style.visibility = 'hidden';
       }
 
-      document.querySelector('svg').style.visibility = 'hidden';
-    }
+      function closeSlideMenu() {
+        document.querySelector('#side-menu').style.width = '0px';
+        document.querySelector('svg').style.visibility = 'visible';
 
-    function closeSlideMenu() {
-      document.querySelector('#side-menu').style.width = '0px';
-      document.querySelector('svg').style.visibility = 'visible';
-
-    }
-  </script>
-</body>
+      }
+    </script>
+  </body>
 
 </html>
