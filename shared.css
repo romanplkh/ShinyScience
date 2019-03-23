@@ -259,7 +259,8 @@ section:nth-child(odd) .main-display__headline {
   margin: 0 auto;
 }
 
-#loader {
+#loader,
+.btn-fancy {
   color: #fff;
   font-size: 1em;
   font-weight: bold;

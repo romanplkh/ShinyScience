@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Poppins|Roboto+Mono")
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #404874;
+  background-image: none;
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+}
+
+.welcoming-panel {
+  background-color: #404874;
+  height: 40vh;
+  width: 100%;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.heading h1 {
+  position: relative;
+  color: #fff;
+}
+
+.heading p {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+}
+
+.faq-body {
+  font-family: "Poppins", sans-serif;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  font-weight: bold;
+  border-bottom: 0.2px solid #aaa;
+}
+
+@media only screen and (min-width: 1em) and (max-width: 40em) {
+  .welcoming-panel {
+    height: 40vh;
+  }
+
+  .heading h1 {
+    top: 30%;
+    font-size: 2em;
+  }
+
+  .accordion {
+    padding: 18px;
+    font-size: 15px;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .icons {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 3%;
+  }
+
+  .icons > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 2%;
+    font-family: "Roboto Mono", monospace;
+  }
+
+  .icons i {
+    color: #000;
+    clip-path: circle(40% at 50% 50%);
+    background-color: #fed700;
+    font-size: 1.7em;
+    padding: 1em;
+    margin: 2%;
+  }
+}
