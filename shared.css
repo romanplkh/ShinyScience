@@ -40,7 +40,11 @@ header h2 {
   font-family: "Orbitron", sans-serif;
   letter-spacing: 0.2em;
   margin-right: auto;
-  text-shadow: 1px 1px 1px #fff;
+}
+
+header h2 a {
+  text-decoration: none;
+  color: #000;
 }
 
 /* MENU */
@@ -300,7 +304,6 @@ section:nth-child(odd) .main-display__headline {
 .main-footer {
   background: #fed700;
   width: 100%;
-  border-radius: 10px;
 }
 
 .main-footer__logo {

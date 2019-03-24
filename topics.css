@@ -7,7 +7,8 @@ html {
 body {
   margin: 0;
   width: 100%;
-  background-image: url("./image/topics-bg.jpg");
+  background-image: none;
+  background-color: #000;
 }
 
 section {
@@ -18,7 +19,6 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -35,14 +35,17 @@ section {
 }
 
 .welcome-headline h1 {
-  font-family: Audiowide, Verdana, Geneva, Tahoma, sans-serif;
-  position: absolute;
+  font-family: Audiowide, sans-serif;
+  position: relative;
   text-align: center;
   color: #fff;
 }
 
+article {
+  height: 100%;
+}
+
 .section-title {
-  background-color: #013c65;
   width: 100%;
   margin-bottom: 3%;
 }
@@ -53,6 +56,7 @@ section {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 4px 4px 12px #000;
 }
 
 .section-body {
@@ -68,10 +72,11 @@ section {
 }
 
 .topic {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.527);
+  box-shadow: 0 4px 8px 0 #00000086;
   text-align: center;
   font-family: arial;
   background-color: #fff;
+  border-radius: 20px;
 }
 
 .topic p {
@@ -92,6 +97,53 @@ section {
 
 .topic button:hover {
   opacity: 0.7;
+}
+
+.space {
+  background-image: url("./image/topics-bg.jpg");
+  background-attachment: fixed;
+}
+
+.title-space {
+  background-color: #013c65;
+}
+
+.insects {
+  background-image: url("./image/insects-bg.jpeg");
+  /* background-color: #000; */
+  background-attachment: fixed;
+}
+
+.title-insects {
+  background-color: #439539;
+}
+
+.ocean {
+  background-image: url("./image/ocean-gb.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title-ocean {
+  background-color: #008bc0;
+}
+
+.topic img {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    100% 87%,
+    76% 100%,
+    48% 88%,
+    0 88%
+  );
+}
+
+.main-footer {
+  margin: 0;
+  border-radius: 0px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 1em) and (max-width: 40em) {
@@ -119,7 +171,7 @@ section {
 @media only screen and (min-width: 40.001em) and (max-width: 59.999em) {
   .welcome-headline h1 {
     width: 100%;
-    top: 30%;
+    top: 40%;
     font-size: 3em;
   }
 
@@ -141,7 +193,7 @@ section {
 @media only screen and (min-width: 60em) {
   .welcome-headline h1 {
     width: 100%;
-    top: 30%;
+    top: 40%;
     font-size: 4em;
   }
 
