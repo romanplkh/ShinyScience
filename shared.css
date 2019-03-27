@@ -129,7 +129,7 @@ header nav {
 
 #current-episode {
   background-image: url("./image/1.jpeg");
-  background-position: 0px 60%;
+  background-position: 60% 60%;
   background-size: cover;
 }
 
@@ -142,7 +142,7 @@ header nav {
 }
 
 #insects {
-  background-image: url("./image/8.jpg");
+  background-image: url("./image/5.jpg");
 }
 
 #craft {
@@ -158,7 +158,7 @@ header nav {
 }
 
 #universe-2 {
-  background-image: url("./image/5.jpg");
+  background-image: url("./image/galaxy.jpg");
 }
 
 .drop {
@@ -198,8 +198,8 @@ header nav {
   letter-spacing: 0.3em;
   position: relative;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: 50% 50%;
   height: 100%;
   width: 100%;
   min-width: 100%;

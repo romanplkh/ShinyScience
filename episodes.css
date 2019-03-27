@@ -72,6 +72,11 @@ section.heading h1 {
   font-family: "Baloo Chettan", cursive;
 }
 
+.slideshow-container img {
+  object-fit: cover;
+  overflow: hidden;
+}
+
 .mySlides img {
   width: 100%;
 }
@@ -101,7 +106,7 @@ section.heading h1 {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(107, 107, 107, 0.8);
   opacity: 1;
 }
 
@@ -181,11 +186,18 @@ section.heading h1 {
 }
 
 .card-video {
+  flex: auto 1 1;
+  overflow: hidden;
   width: 300px;
+  height: 300px;
   padding: 0;
   border-radius: 20px;
   position: relative;
   margin: 1%;
+}
+.card-video img {
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .video-space {
@@ -376,7 +388,7 @@ button.more-episodes {
 
   .slideshow-container {
     margin-top: 2%;
-    width: 60%;
+    max-width: 70%;
   }
 
   .mySlides img {
