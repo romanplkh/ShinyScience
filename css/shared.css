@@ -217,60 +217,6 @@ a:link {
   width: 100%;
 }
 
-form {
-  font-family: "Orbitron", sans-serif;
-  display: flex;
-  flex-flow: column wrap;
-  width: 40%;
-  margin-top: 10em;
-  box-shadow: 1px 1px 2px #bbb;
-  background-color: #fff;
-  border-radius: 5%;
-  padding: 2%;
-}
-
-form h1 {
-  text-align: center;
-}
-
-.btn-submit {
-  margin-top: 2%;
-  border: 2px solid #fed700;
-  border-radius: 2em;
-  padding: 4%;
-  background-color: transparent;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.btn-submit:hover {
-  color: #fff;
-  border: 2px solid #000;
-
-  background-color: #fed700;
-  cursor: pointer;
-  transition: ease-out 300ms;
-}
-
-form input,
-textarea {
-  width: 100%;
-  outline: none;
-  border: 1px solid #aaa;
-  border-radius: 0.3em;
-  padding: 2%;
-  margin-bottom: 2%;
-}
-
-form label {
-  margin-bottom: 2%;
-}
-
-form textarea {
-  margin-top: 1em;
-  resize: none;
-}
-
 @media only screen and (min-width: 1em) and (max-width: 40em) {
   /* FOOTER */
 
@@ -530,12 +476,12 @@ form textarea {
     padding-left: 2px;
   }
 
-   footer {
+  footer {
     grid-column: 1/5;
     margin-top: 3em;
   }
 
-  .separator{
+  .separator {
     display: none;
   }
   .container-footer {
@@ -549,7 +495,7 @@ form textarea {
     border-radius: 10px;
     justify-content: center;
     align-items: baseline;
-    background-image: url("./image/brilliant.png");
+    background-image: url("/image/brilliant.png");
   }
 
   .main-footer-title {
@@ -558,7 +504,7 @@ form textarea {
   }
 
   .main-footer__logo {
-    background-image: url("./image/logo.png");
+    background-image: url("/image/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
@@ -629,6 +575,5 @@ form textarea {
 
   .main-footer__info-web {
     display: inline;
-}
-
+  }
 }

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Poppins|Roboto+Mono");
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background-image: none;
+  background-color: #000;
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.heading img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.heading .dark-overlay {
+  background-color: rgba(0, 0, 0, 0.568);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.heading h1 {
+  position: relative;
+  top: 100%;
+  color: #fff;
+}
+
+.heading p {
+  position: relative;
+  top: 30%;
+  color: #fff;
+}
+
+#myBtn {
+  position: relative;
+  top: 40%;
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #0099cc;
+  color: #ffffff;
+}
+
+#myBtn:focus,
+#myBtn:active:focus,
+#myBtn:focus {
+  outline: 0 none;
+}
+
+#myBtn:hover {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.541);
+}
+
+.modal-content {
+  margin: 10% auto 0;
+  padding: 2em;
+  width: 30%;
+}
+
+.close {
+  color: #555;
+  float: right;
+  font-size: 3em;
+  font-weight: bold;
+  margin-right: 2%;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  font-family: "Roboto Mono";
+}
+
+label {
+  font-family: "Poppins";
+  font-size: 1.3em;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 2em;
+}
+
+@media only screen and (min-width: 1em) and (max-width: 40em) {
+  .heading h1 {
+    top: 30%;
+    font-size: 2.5em;
+  }
+
+  .heading {
+    height: 100vh;
+  }
+
+  .heading p {
+    font-size: 1.5em;
+  }
+  .modal-content {
+    width: 85%;
+    margin-top: 20%;
+    padding: 1%;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .main-footer {
+    margin: 0;
+    position: static;
+  }
+}
+
+@media only screen and (min-width: 40.001em) and (max-width: 59.999em) {
+  .heading h1 {
+    top: 30%;
+    font-size: 3em;
+  }
+
+  .heading {
+    height: 100vh;
+  }
+
+  .heading p {
+    font-size: 1.9em;
+  }
+
+  .modal-content {
+    width: 85%;
+    margin-top: 20%;
+    padding: 1%;
+  }
+  footer {
+    position: static;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .heading h1 {
+    top: 30%;
+    font-size: 3em;
+  }
+
+  .heading p {
+    font-size: 1.9em;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  .main-footer {
+    border-radius: 0px;
+  }
+}

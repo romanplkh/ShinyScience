@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+      <script src="app.js"></script>
   </head>
 
   <body class="topic-bgc">
@@ -32,7 +33,7 @@
       </div>
 
       <span class="open-slide">
-        <a onclick="openSlideMenu()" href="#">
+        <a id="open-menu" href="#">
           <svg width="30" height="30">
             <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
             <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
@@ -41,7 +42,7 @@
         </a>
       </span>
       <div id="side-menu" class="side-nav">
-        <a onclick="closeSlideMenu()" href="#" class="btn-close">&times;</a>
+        <a id="close-menu" href="#" class="btn-close">&times;</a>
         <div class="search-drop-group">
           <i class="fas fa-search"></i> <input id="search" type="search">
         </div>
@@ -92,8 +93,8 @@
         <div class="text">Animals</div>
       </div>
     
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a id="prev" class="prev">&#10094;</a>
+      <a id="next" class="next">&#10095;</a>
     </div>
     <br>
     <div style="text-align:center">
@@ -259,58 +260,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      function openSlideMenu() {
-        if (window.innerWidth >= 650) {
-          document.querySelector('#side-menu').style.width = '400px';
-        } else {
-          document.querySelector('#side-menu').style.width = '250px';
-        }
-
-        document.querySelector('svg').style.visibility = 'hidden';
-      }
-
-      function closeSlideMenu() {
-        document.querySelector('#side-menu').style.width = '0px';
-        document.querySelector('svg').style.visibility = 'visible';
-
-      }
-
-
-        /* SLIDE SHOW */
-          var slideIndex = 1;
-          showSlides(slideIndex);
-
-          // Next/previous controls
-          function plusSlides(n) {
-            showSlides((slideIndex += n));
-          }
-
-          // Thumbnail image controls
-          function currentSlide(n) {
-            showSlides((slideIndex = n));
-          }
-
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-              slideIndex = 1;
-            }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-          }
-    </script>
   </body>
 
 </html>

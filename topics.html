@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+      <script src="app.js"></script>
   </head>
 
   <body class="topic-bgc">
@@ -32,7 +33,7 @@
       </div>
 
       <span class="open-slide">
-        <a onclick="openSlideMenu()" href="#">
+        <a id="open-menu" href="#">
           <svg width="30" height="30">
             <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
             <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
@@ -41,7 +42,7 @@
         </a>
       </span>
       <div id="side-menu" class="side-nav">
-        <a onclick="closeSlideMenu()" href="#" class="btn-close">&times;</a>
+        <a id="close-menu" href="#" class="btn-close">&times;</a>
         <div class="search-drop-group">
           <i class="fas fa-search"></i> <input id="search" type="search">
         </div>
@@ -70,7 +71,7 @@
 
       <section class="section-body">
         <div class="topic">
-          <img src="./image/space-1.jpeg" alt="">
+          <img src="./image/space-1.jpeg"   alt="">
           <h1>Big Bang</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et maiores iste minima molestias. Odio reiciendis
             minus
@@ -317,23 +318,6 @@
           </div>
         </div>
       </footer>
-      <script>
-        function openSlideMenu() {
-          if (window.innerWidth >= 650) {
-            document.querySelector('#side-menu').style.width = '400px';
-          } else {
-            document.querySelector('#side-menu').style.width = '250px';
-          }
-
-          document.querySelector('svg').style.visibility = 'hidden';
-        }
-
-        function closeSlideMenu() {
-          document.querySelector('#side-menu').style.width = '0px';
-          document.querySelector('svg').style.visibility = 'visible';
-
-        }
-      </script>
   </body>
 
 </html>

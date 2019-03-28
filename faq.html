@@ -33,7 +33,7 @@
       </div>
 
       <span class="open-slide">
-        <a onclick="openSlideMenu()" href="#">
+        <a id="open-menu" href="#">
           <svg width="30" height="30">
             <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
             <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
@@ -42,7 +42,7 @@
         </a>
       </span>
       <div id="side-menu" class="side-nav">
-        <a onclick="closeSlideMenu()" href="#" class="btn-close">&times;</a>
+        <a id="close-menu" href="#" class="btn-close">&times;</a>
         <div class="search-drop-group">
           <i class="fas fa-search"></i> <input id="search" type="search">
         </div>
@@ -199,23 +199,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      function openSlideMenu() {
-        if (window.innerWidth >= 650) {
-          document.querySelector('#side-menu').style.width = '400px';
-        } else {
-          document.querySelector('#side-menu').style.width = '250px';
-        }
-
-        document.querySelector('svg').style.visibility = 'hidden';
-      }
-
-      function closeSlideMenu() {
-        document.querySelector('#side-menu').style.width = '0px';
-        document.querySelector('svg').style.visibility = 'visible';
-
-      }
-    </script>
   </body>
 
 </html>

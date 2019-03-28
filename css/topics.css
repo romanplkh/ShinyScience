@@ -103,6 +103,7 @@ article {
 .space {
   background-image: url("../image/topics-bg.jpg");
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .title-space {
@@ -113,6 +114,7 @@ article {
   background-image: url("../image/insects-bg.jpeg");
   /* background-color: #000; */
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .title-insects {
