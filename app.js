@@ -14,7 +14,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const modal = document.querySelector("#myModal");
+  const btn = document.querySelector("#myBtn");
+  const span = document.getElementsByClassName("close")[0];
+
   //EVENT LISTENERS
+  document.addEventListener("click", ev => {
+    clickAnyWhere(ev, modal);
+    console.log("clicked");
+  });
+
+  btn.addEventListener("click", () => {
+    openModal(modal);
+  });
+
+  span.addEventListener("click", () => {
+    closeModal(modal);
+  });
+
   document.querySelector("#open-menu").addEventListener("click", openSlideMenu);
 
   document
@@ -78,3 +95,12 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+const openModal = modal => (modal.style.display = "block");
+const closeModal = modal => (modal.style.display = "none");
+
+const clickAnyWhere = (ev, modal) => {
+  if (ev.target == modal) {
+    modal.style.display = "none";
+  }
+};
