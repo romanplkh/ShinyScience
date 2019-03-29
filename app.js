@@ -24,13 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("clicked");
   });
 
-  btn.addEventListener("click", () => {
-    openModal(modal);
-  });
+  if (btn != null && span != null) {
+    btn.addEventListener("click", () => {
+      openModal(modal);
+    });
 
-  span.addEventListener("click", () => {
-    closeModal(modal);
-  });
+    span.addEventListener("click", () => {
+      closeModal(modal);
+    });
+  }
 
   document.querySelector("#open-menu").addEventListener("click", openSlideMenu);
 
@@ -46,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     plusSlides(1);
   });
 
-  showSlides(1);
+  currentSlide(1);
 });
 
 /* HAMBURGER */
@@ -66,11 +68,9 @@ const closeSlideMenu = () => {
 
 /* SLIDE SHOW */
 
-// Next/previous controls
 let slideIndex = 1;
 const plusSlides = n => showSlides((slideIndex += n));
 
-// Thumbnail image controls
 const currentSlide = n => showSlides((slideIndex = n));
 
 function showSlides(n) {
